@@ -1,0 +1,15 @@
+{
+    "files/fhogcascade_face_frontal.dat": "1f980ac874b407b754099178c2b20af414e8851200caccbcf91960f8135feadd",
+    "files/shape_predictor_68_face_landmarks.dat": "0a9bc8ed80a40a5c06b456c2d9e1244402d8d940b23566cfaf1a685781ff63d3",
+    "files/mobilefacenet-opt.param": "b7e127a0d27ca2b527bfba85d11bf6c9a2c9d3b1e28355e57a98d85809acb5e2",
+    "files/mobilefacenet-q12.nv": "d5e1328b1b7f3995cd5f6494dd70cb01a332abee45fd31f2e6ec651e2cdd5637",
+    "files/RFB-320.nv": "11bf5f0430ee69d46a501bb5afe7812b0b4188a9aecc428fbf4429bc1fa3d45d",
+    "files/facemask-20200720-dut23td+1700-251149%3000.nv": "3a5e834254f9da02406509651a8514815f857d87de66f02c0e482de511b5f15d",
+    "files/facenet-20170512.nv": "4cdb3340d50e0a42326544c173c3353915de95e83f09b04f059eea5111e2e7ba",
+    "files/rec21-recfull-20211108vw-fn23i-s8597c-b144f6-c1062-t100m10-r14s3000-q06.nv": "b01fa8550e6a1a5f9e6b6dd0b035ac50719429bcab617dafab5c776f3a6c445d",
+    "files/RFB-320.param": "fbde20ba996bc549eb9eddb7a81720929934ce87b3662981c48ee142ed9bee62",
+    "files/RFB-320.bin": "4f2554426934e9623f0e25c0825c3a14e807277bdffba8ad69aa4881a935bf47",
+    "files/dlib_face_recognition_resnet_model_v1.dat": "6f817de54ed2b67e7363b8fae9ead7ae0ab26e002b71fd8941b956b96430a69d",
+    "files/mobilefacenet-opt.bin": "d8b5fb6149439db06679ee9eb642b362c2a7d219340f827befe87d4085d0bf3d",
+    "files/shape_predictor_5_face_landmarks.dat": "c4b1e9804792707d3a405c2c16a80a20269e6675021f64a41d30fffafbc41888"
+}
