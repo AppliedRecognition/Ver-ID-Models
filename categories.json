@@ -1,39 +1,39 @@
 {
     "face-recognition": {
         "v16": [
-            "files/dlib_face_recognition_resnet_model_v1.dat"
+            "dlib_face_recognition_resnet_model_v1.dat"
         ],
         "v20": [
-            "files/facenet-20170512.nv"
+            "facenet-20170512.nv"
         ],
         "v21": [
-            "files/rec21-recfull-20211108vw-fn23i-s8597c-b144f6-c1062-t100m10-r14s3000-q06.nv"
+            "rec21-recfull-20211108vw-fn23i-s8597c-b144f6-c1062-t100m10-r14s3000-q06.nv"
         ],
         "v24": [
-            "files/mobilefacenet-opt.bin",
-            "files/mobilefacenet-opt.param",
-            "files/mobilefacenet-q12.nv"
+            "mobilefacenet-opt.bin",
+            "mobilefacenet-opt.param",
+            "mobilefacenet-q12.nv"
         ]
     },
     "face-detection": {
         "v3": [
-            "files/fhogcascade_face_frontal.dat"
+            "fhogcascade_face_frontal.dat"
         ],
         "v6": [
-            "files/RFB-320.bin",
-            "files/RFB-320.nv",
-            "files/RFB-320.param"
+            "RFB-320.bin",
+            "RFB-320.nv",
+            "RFB-320.param"
         ]
     },
     "landmark-detection": {
         "v1": [
-            "files/shape_predictor_5_face_landmarks.dat",
-            "files/shape_predictor_68_face_landmarks.dat"
+            "shape_predictor_5_face_landmarks.dat",
+            "shape_predictor_68_face_landmarks.dat"
         ]
     },
     "classifiers": {
         "face-mask": [
-            "files/facemask-20200720-dut23td+1700-251149%3000.nv"
+            "facemask-20200720-dut23td+1700-251149%3000.nv"
         ]
     }
 }

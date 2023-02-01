@@ -12,5 +12,5 @@ for file in files:
             hash = sha256()
             hash.update(f.read())
             digest = hash.hexdigest()
-            hashes[os.path.relpath(file.path, root_dir)] = digest
+            hashes[file.name] = digest
 print(json.dumps(hashes, indent=4))
