@@ -35,5 +35,19 @@
         "face-mask": [
             "facemask-20200720-dut23td+1700-251149%3000.nv"
         ]
+    },
+    "liveness-detection": {
+        "spoof-device-detection-coreml": [
+            "SpoofDetectorModel_1.0.7_bst_2022-11-26_yl61.mlmodel"
+        ],
+        "spoof-device-detection-tflite": [
+            "SpoofDetectorModel_1.0.7_bst_2022-11-26_yl61-fp16.tflite"
+        ],
+        "moire-detection-coreml": [
+            "MoireDetectorModel_ep100_ntrn-627p-620n_02_res-98-99-96-0-5.mlmodel"
+        ],
+        "moire-detection-tflite": [
+            "MoireDetectorModel_ep100_ntrn-627p-620n_02_res-98-99-96-0-5.tflite"
+        ]
     }
 }
