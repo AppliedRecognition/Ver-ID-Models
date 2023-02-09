@@ -15,5 +15,6 @@
     "RFB-320.bin": "4f2554426934e9623f0e25c0825c3a14e807277bdffba8ad69aa4881a935bf47",
     "dlib_face_recognition_resnet_model_v1.dat": "6f817de54ed2b67e7363b8fae9ead7ae0ab26e002b71fd8941b956b96430a69d",
     "mobilefacenet-opt.bin": "d8b5fb6149439db06679ee9eb642b362c2a7d219340f827befe87d4085d0bf3d",
+    "SpoofDetectorModel_1.0.7_bst_2022-11-26_yl61.torchscript": "5be66f396ef739f0769b1a4448948e77645e81d9a25d97a68fe8400a2560f05e",
     "shape_predictor_5_face_landmarks.dat": "c4b1e9804792707d3a405c2c16a80a20269e6675021f64a41d30fffafbc41888"
 }
