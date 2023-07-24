@@ -67,6 +67,10 @@
             "ARC_PSD-004_model_1.param",
             "ARC_PSD-004_model_2.bin",
             "ARC_PSD-004_model_2.param"
+        ],
+        "spoof-detection4-coreml": [
+            "ARC_PSD-004_2.7_80x80.mlmodel",
+            "ARC_PSD-004_4_80x80.mlmodel"
         ]
     }
 }
