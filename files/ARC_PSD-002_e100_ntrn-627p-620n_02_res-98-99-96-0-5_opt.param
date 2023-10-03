@@ -1,0 +1,32 @@
+7767517
+30 30
+Input                    input_1                  0 1 input_1
+Input                    input_2                  0 1 input_2
+Input                    input_3                  0 1 input_3
+Input                    input_4                  0 1 input_4
+Reshape                  StatefulPartitionedCall/model/conv2d_3/BiasAdd__6 1 1 input_4 StatefulPartitionedCall/model/conv2d_3/BiasAdd__6:0 0=500 1=375 2=1
+Convolution              StatefulPartitionedCall/model/conv2d_3/BiasAdd 1 1 StatefulPartitionedCall/model/conv2d_3/BiasAdd__6:0 StatefulPartitionedCall/model/conv2d_3/Relu:0 0=32 1=7 4=3 5=1 6=1568 9=1
+Pooling                  StatefulPartitionedCall/model/max_pooling2d_3/MaxPool 1 1 StatefulPartitionedCall/model/conv2d_3/Relu:0 StatefulPartitionedCall/model/max_pooling2d_3/MaxPool:0 1=2 2=2 5=1
+Reshape                  StatefulPartitionedCall/model/conv2d_2/BiasAdd__14 1 1 input_3 StatefulPartitionedCall/model/conv2d_2/BiasAdd__14:0 0=500 1=375 2=1
+Convolution              StatefulPartitionedCall/model/conv2d_2/BiasAdd 1 1 StatefulPartitionedCall/model/conv2d_2/BiasAdd__14:0 StatefulPartitionedCall/model/conv2d_2/Relu:0 0=32 1=7 4=3 5=1 6=1568 9=1
+Pooling                  StatefulPartitionedCall/model/max_pooling2d_2/MaxPool 1 1 StatefulPartitionedCall/model/conv2d_2/Relu:0 StatefulPartitionedCall/model/max_pooling2d_2/MaxPool:0 1=2 2=2 5=1
+Reshape                  StatefulPartitionedCall/model/conv2d_1/BiasAdd__22 1 1 input_2 StatefulPartitionedCall/model/conv2d_1/BiasAdd__22:0 0=500 1=375 2=1
+Convolution              StatefulPartitionedCall/model/conv2d_1/BiasAdd 1 1 StatefulPartitionedCall/model/conv2d_1/BiasAdd__22:0 StatefulPartitionedCall/model/conv2d_1/Relu:0 0=32 1=7 4=3 5=1 6=1568 9=1
+Pooling                  StatefulPartitionedCall/model/max_pooling2d_1/MaxPool 1 1 StatefulPartitionedCall/model/conv2d_1/Relu:0 StatefulPartitionedCall/model/max_pooling2d_1/MaxPool:0 1=2 2=2 5=1
+BinaryOp                 StatefulPartitionedCall/model/maximum/Maximum 2 1 StatefulPartitionedCall/model/max_pooling2d_1/MaxPool:0 StatefulPartitionedCall/model/max_pooling2d_2/MaxPool:0 StatefulPartitionedCall/model/maximum/Maximum:0 0=4
+BinaryOp                 StatefulPartitionedCall/model/maximum/Maximum_1 2 1 StatefulPartitionedCall/model/maximum/Maximum:0 StatefulPartitionedCall/model/max_pooling2d_3/MaxPool:0 StatefulPartitionedCall/model/maximum/Maximum_1:0 0=4
+Reshape                  StatefulPartitionedCall/model/conv2d/BiasAdd__30 1 1 input_1 StatefulPartitionedCall/model/conv2d/BiasAdd__30:0 0=500 1=375 2=1
+Convolution              StatefulPartitionedCall/model/conv2d/BiasAdd 1 1 StatefulPartitionedCall/model/conv2d/BiasAdd__30:0 StatefulPartitionedCall/model/conv2d/Relu:0 0=32 1=7 4=3 5=1 6=1568 9=1
+Pooling                  StatefulPartitionedCall/model/max_pooling2d/MaxPool 1 1 StatefulPartitionedCall/model/conv2d/Relu:0 StatefulPartitionedCall/model/max_pooling2d/MaxPool:0 1=2 2=2 5=1
+BinaryOp                 StatefulPartitionedCall/model/multiply/mul 2 1 StatefulPartitionedCall/model/max_pooling2d/MaxPool:0 StatefulPartitionedCall/model/maximum/Maximum_1:0 StatefulPartitionedCall/model/multiply/mul:0 0=2
+Convolution              StatefulPartitionedCall/model/conv2d_4/BiasAdd 1 1 StatefulPartitionedCall/model/multiply/mul:0 StatefulPartitionedCall/model/conv2d_4/Relu:0 0=16 1=3 4=1 5=1 6=4608 9=1
+Pooling                  StatefulPartitionedCall/model/max_pooling2d_4/MaxPool 1 1 StatefulPartitionedCall/model/conv2d_4/Relu:0 StatefulPartitionedCall/model/max_pooling2d_4/MaxPool:0 1=4 2=4 5=1
+Convolution              StatefulPartitionedCall/model/conv2d_5/BiasAdd 1 1 StatefulPartitionedCall/model/max_pooling2d_4/MaxPool:0 StatefulPartitionedCall/model/conv2d_5/Relu:0 0=32 1=3 4=1 5=1 6=4608 9=1
+Pooling                  StatefulPartitionedCall/model/max_pooling2d_5/MaxPool 1 1 StatefulPartitionedCall/model/conv2d_5/Relu:0 StatefulPartitionedCall/model/max_pooling2d_5/MaxPool:0 1=2 2=2 5=1
+Convolution              StatefulPartitionedCall/model/conv2d_6/BiasAdd 1 1 StatefulPartitionedCall/model/max_pooling2d_5/MaxPool:0 StatefulPartitionedCall/model/conv2d_6/Relu:0 0=32 1=3 4=1 5=1 6=9216 9=1
+Pooling                  StatefulPartitionedCall/model/max_pooling2d_6/MaxPool 1 1 StatefulPartitionedCall/model/conv2d_6/Relu:0 StatefulPartitionedCall/model/max_pooling2d_6/MaxPool:0 1=2 2=2 5=1
+Permute                  StatefulPartitionedCall/model/max_pooling2d_6/MaxPool__60 1 1 StatefulPartitionedCall/model/max_pooling2d_6/MaxPool:0 StatefulPartitionedCall/model/max_pooling2d_6/MaxPool__60:0 0=3
+Reshape                  StatefulPartitionedCall/model/flatten/Reshape 1 1 StatefulPartitionedCall/model/max_pooling2d_6/MaxPool__60:0 StatefulPartitionedCall/model/flatten/Reshape:0 0=5280
+InnerProduct             StatefulPartitionedCall/model/dense/MatMul 1 1 StatefulPartitionedCall/model/flatten/Reshape:0 StatefulPartitionedCall/model/dense/Relu:0 0=32 1=1 2=168960 9=1
+InnerProduct             StatefulPartitionedCall/model/dense_1/MatMul 1 1 StatefulPartitionedCall/model/dense/Relu:0 StatefulPartitionedCall/model/dense_1/BiasAdd:0 0=2 1=1 2=64
+Softmax                  StatefulPartitionedCall/model/dense_1/Softmax 1 1 StatefulPartitionedCall/model/dense_1/BiasAdd:0 dense_1
