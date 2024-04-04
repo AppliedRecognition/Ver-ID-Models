@@ -34,6 +34,12 @@
     "classifiers": {
         "face-mask": [
             "facemask-20200720-dut23td+1700-251149%3000.nv"
+        ],
+        "glasses": [
+            "glasses-20231216na-[ffv2702_fft4539_clbatl3641_detface94_detface18]+mutate+mirror-rgb-yolo100-log-r12s4000-q08.nv"
+        ],
+        "face-quality": [
+            "facequal-s102559-ms-r12s2000-q08.nv"
         ]
     },
     "liveness-detection": {
