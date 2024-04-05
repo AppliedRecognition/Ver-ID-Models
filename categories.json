@@ -12,7 +12,8 @@
         "v24": [
             "mobilefacenet-opt.bin",
             "mobilefacenet-opt.param",
-            "mobilefacenet-q12.nv"
+            "mobilefacenet-q12.nv",
+            "rec24-facenet-20170512.nv"
         ]
     },
     "face-detection": {
