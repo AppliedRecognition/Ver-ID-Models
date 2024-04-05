@@ -23,6 +23,11 @@
             "RFB-320.bin",
             "RFB-320.nv",
             "RFB-320.param"
+        ],
+        "v7": [
+            "mnet.25-opt.bin",
+            "mnet.25-opt.nv",
+            "mnet.25-opt.param"
         ]
     },
     "landmark-detection": {
