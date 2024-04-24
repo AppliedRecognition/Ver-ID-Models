@@ -57,7 +57,8 @@
             "ARC_PSD-001_1.1.29_bst_yl80.param"
         ],
 	"spoof-device-detection-tflite": [
-	    "ARC_PSD-001_1.1.122_bst_yl80201_float32.tflite"
+	    "ARC_PSD-001_1.1.122_bst_yl80201_float32.tflite",
+	    "ARC_PSD-001_1.1.122_bst_yl80201_float16.tflite"
 	],
         "moire-detection-coreml": [
             "MoireDetectorModel_ep100_ntrn-627p-620n_02_res-98-99-96-0-5.mlmodel"
