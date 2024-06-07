@@ -10,8 +10,8 @@
             "rec21-recfull-20211108vw-fn23i-s8597c-b144f6-c1062-t100m10-r14s3000-q06.nv"
         ],
         "v24": [
-            "mobilefacenet-opt.bin",
-            "mobilefacenet-opt.param",
+            "rec24-opt.bin",
+            "rec24-opt.param",
             "mobilefacenet-q12.nv",
             "rec24-facenet-20170512.nv"
         ]
