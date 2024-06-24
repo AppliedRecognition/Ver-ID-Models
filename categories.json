@@ -1,33 +1,38 @@
 {
     "face-recognition": {
-        "v16": [
+        "v16-DLIB": [
             "dlib_face_recognition_resnet_model_v1.dat"
         ],
-        "v20": [
+        "v20-DLIB": [
             "facenet-20170512.nv"
         ],
-        "v21": [
+        "v21-DLIB": [
             "rec21-recfull-20211108vw-fn23i-s8597c-b144f6-c1062-t100m10-r14s3000-q06.nv"
         ],
-        "v24": [
+        "v24-NCNN": [
             "rec24-opt.bin",
-            "rec24-opt.param",
-            "mobilefacenet-q12.nv",
-            "rec24-facenet-20170512.nv"
+            "rec24-opt.param"
+        ],
+        "v24-DLIB": [
+            "mobilefacenet-q12.nv"
         ]
     },
     "face-detection": {
-        "v3": [
-            "fhogcascade_face_frontal.dat"
+        "v3-DLIB": [
+            "mmod_human_face_detector.dat"
         ],
-        "v6": [
+        "v6-DLIB": [
+            "RFB-320.nv"
+        ],
+        "v6-NCNN": [
             "RFB-320.bin",
-            "RFB-320.nv",
             "RFB-320.param"
         ],
-        "v7": [
+        "v7-DLIB": [
+            "mnet.25-opt.nv"
+        ],
+        "v7-NCNN": [
             "mnet.25-opt.bin",
-            "mnet.25-opt.nv",
             "mnet.25-opt.param"
         ]
     },
