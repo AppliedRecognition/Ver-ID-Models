@@ -14,7 +14,7 @@
             "rec24-opt.param"
         ],
         "v24-DLIB": [
-            "mobilefacenet-q12.nv"
+            "rec24-facenet-20170512.nv"
         ]
     },
     "face-detection": {
