@@ -1,0 +1,257 @@
+7767517
+255 290
+Input                    input                    0 1 input
+BinaryOp                 xblob0                   1 1 input xblob0 0=1 1=1 2=1.280000e+02
+BinaryOp                 xblob1                   1 1 xblob0 xblob1 0=2 1=1 2=7.812500e-03
+Convolution              l256                     1 1 xblob1 l256 0=16 1=3 3=2 4=1 5=1 6=432
+PReLU                    l257                     1 1 l256 l257 0=16
+Split                    splitncnn_0              1 2 l257 xblob2 xblob3
+Convolution              l258                     1 1 xblob2 l258 0=8 1=1 5=1 6=128
+PReLU                    l259                     1 1 l258 l259 0=8
+ConvolutionDepthWise     l260                     1 1 l259 l260 0=8 1=3 4=1 5=1 6=72 7=8
+Convolution              l261                     1 1 l260 l261 0=16 1=1 5=1 6=128
+BinaryOp                 l262                     2 1 xblob3 l261 l262
+PReLU                    l263                     1 1 l262 l263 0=16
+Split                    splitncnn_1              1 2 l263 xblob4 xblob5
+Convolution              l264                     1 1 xblob4 l264 0=8 1=1 5=1 6=128
+PReLU                    l265                     1 1 l264 l265 0=8
+ConvolutionDepthWise     l266                     1 1 l265 l266 0=8 1=3 4=1 5=1 6=72 7=8
+Convolution              l267                     1 1 l266 l267 0=16 1=1 5=1 6=128
+BinaryOp                 l268                     2 1 xblob5 l267 l268
+PReLU                    l269                     1 1 l268 l269 0=16
+Split                    splitncnn_2              1 2 l269 xblob6 xblob7
+Convolution              l270                     1 1 xblob6 l270 0=8 1=1 5=1 6=128
+PReLU                    l271                     1 1 l270 l271 0=8
+ConvolutionDepthWise     l272                     1 1 l271 l272 0=8 1=3 4=1 5=1 6=72 7=8
+Convolution              l273                     1 1 l272 l273 0=16 1=1 5=1 6=128
+BinaryOp                 l274                     2 1 xblob7 l273 l274
+PReLU                    l275                     1 1 l274 l275 0=16
+Split                    splitncnn_3              1 2 l275 xblob8 xblob9
+Convolution              l276                     1 1 xblob8 l276 0=8 1=1 5=1 6=128
+PReLU                    l277                     1 1 l276 l277 0=8
+ConvolutionDepthWise     l278                     1 1 l277 l278 0=8 1=3 4=1 5=1 6=72 7=8
+Convolution              l279                     1 1 l278 l279 0=16 1=1 5=1 6=128
+BinaryOp                 l280                     2 1 xblob9 l279 l280
+PReLU                    l281                     1 1 l280 l281 0=16
+Split                    splitncnn_4              1 2 l281 xblob10 xblob11
+Convolution              l282                     1 1 xblob10 l282 0=16 1=2 3=2 5=1 6=1024
+Pooling                  l283                     1 1 xblob11 l283 0=0 1=2 2=2
+PReLU                    l285                     1 1 l282 l285 0=16
+ConvolutionDepthWise     l286                     1 1 l285 l286 0=16 1=3 4=1 5=1 6=144 7=16
+Convolution              l287                     1 1 l286 l287 0=32 1=1 5=1 6=512
+Padding                  xblob12                  1 1 l283 xblob12 8=16
+BinaryOp                 l288                     2 1 xblob12 l287 l288
+PReLU                    l289                     1 1 l288 l289 0=32
+Split                    splitncnn_5              1 2 l289 xblob13 xblob14
+Convolution              l290                     1 1 xblob13 l290 0=16 1=1 5=1 6=512
+PReLU                    l291                     1 1 l290 l291 0=16
+ConvolutionDepthWise     l292                     1 1 l291 l292 0=16 1=3 4=1 5=1 6=144 7=16
+Convolution              l293                     1 1 l292 l293 0=32 1=1 5=1 6=512
+BinaryOp                 l294                     2 1 xblob14 l293 l294
+PReLU                    l295                     1 1 l294 l295 0=32
+Split                    splitncnn_6              1 2 l295 xblob15 xblob16
+Convolution              l296                     1 1 xblob15 l296 0=16 1=1 5=1 6=512
+PReLU                    l297                     1 1 l296 l297 0=16
+ConvolutionDepthWise     l298                     1 1 l297 l298 0=16 1=3 4=1 5=1 6=144 7=16
+Convolution              l299                     1 1 l298 l299 0=32 1=1 5=1 6=512
+BinaryOp                 l300                     2 1 xblob16 l299 l300
+PReLU                    l301                     1 1 l300 l301 0=32
+Split                    splitncnn_7              1 2 l301 xblob17 xblob18
+Convolution              l302                     1 1 xblob17 l302 0=16 1=1 5=1 6=512
+PReLU                    l303                     1 1 l302 l303 0=16
+ConvolutionDepthWise     l304                     1 1 l303 l304 0=16 1=3 4=1 5=1 6=144 7=16
+Convolution              l305                     1 1 l304 l305 0=32 1=1 5=1 6=512
+BinaryOp                 l306                     2 1 xblob18 l305 l306
+PReLU                    l307                     1 1 l306 l307 0=32
+Split                    splitncnn_8              1 2 l307 xblob19 xblob20
+Convolution              l308                     1 1 xblob19 l308 0=16 1=1 5=1 6=512
+PReLU                    l309                     1 1 l308 l309 0=16
+ConvolutionDepthWise     l310                     1 1 l309 l310 0=16 1=3 4=1 5=1 6=144 7=16
+Convolution              l311                     1 1 l310 l311 0=32 1=1 5=1 6=512
+BinaryOp                 l312                     2 1 xblob20 l311 l312
+PReLU                    l313                     1 1 l312 l313 0=32
+Split                    splitncnn_9              1 2 l313 xblob21 xblob22
+Convolution              l314                     1 1 xblob21 l314 0=32 1=2 3=2 5=1 6=4096
+Pooling                  l315                     1 1 xblob22 l315 0=0 1=2 2=2
+PReLU                    l317                     1 1 l314 l317 0=32
+ConvolutionDepthWise     l318                     1 1 l317 l318 0=32 1=3 4=1 5=1 6=288 7=32
+Convolution              l319                     1 1 l318 l319 0=64 1=1 5=1 6=2048
+Padding                  xblob23                  1 1 l315 xblob23 8=32
+BinaryOp                 l320                     2 1 xblob23 l319 l320
+PReLU                    l321                     1 1 l320 l321 0=64
+Split                    splitncnn_10             1 2 l321 xblob24 xblob25
+Convolution              l322                     1 1 xblob24 l322 0=32 1=1 5=1 6=2048
+PReLU                    l323                     1 1 l322 l323 0=32
+ConvolutionDepthWise     l324                     1 1 l323 l324 0=32 1=3 4=1 5=1 6=288 7=32
+Convolution              l325                     1 1 l324 l325 0=64 1=1 5=1 6=2048
+BinaryOp                 l326                     2 1 xblob25 l325 l326
+PReLU                    l327                     1 1 l326 l327 0=64
+Split                    splitncnn_11             1 2 l327 xblob26 xblob27
+Convolution              l328                     1 1 xblob26 l328 0=32 1=1 5=1 6=2048
+PReLU                    l329                     1 1 l328 l329 0=32
+ConvolutionDepthWise     l330                     1 1 l329 l330 0=32 1=3 4=1 5=1 6=288 7=32
+Convolution              l331                     1 1 l330 l331 0=64 1=1 5=1 6=2048
+BinaryOp                 l332                     2 1 xblob27 l331 l332
+PReLU                    l333                     1 1 l332 l333 0=64
+Split                    splitncnn_12             1 2 l333 xblob28 xblob29
+Convolution              l334                     1 1 xblob28 l334 0=32 1=1 5=1 6=2048
+PReLU                    l335                     1 1 l334 l335 0=32
+ConvolutionDepthWise     l336                     1 1 l335 l336 0=32 1=3 4=1 5=1 6=288 7=32
+Convolution              l337                     1 1 l336 l337 0=64 1=1 5=1 6=2048
+BinaryOp                 l338                     2 1 xblob29 l337 l338
+PReLU                    l339                     1 1 l338 l339 0=64
+Split                    splitncnn_13             1 2 l339 xblob30 xblob31
+Convolution              l340                     1 1 xblob30 l340 0=32 1=1 5=1 6=2048
+PReLU                    l341                     1 1 l340 l341 0=32
+ConvolutionDepthWise     l342                     1 1 l341 l342 0=32 1=3 4=1 5=1 6=288 7=32
+Convolution              l343                     1 1 l342 l343 0=64 1=1 5=1 6=2048
+BinaryOp                 l344                     2 1 xblob31 l343 l344
+PReLU                    l345                     1 1 l344 l345 0=64
+Split                    splitncnn_14             1 2 l345 xblob32 xblob33
+Convolution              l346                     1 1 xblob32 l346 0=64 1=2 3=2 5=1 6=16384
+Pooling                  l347                     1 1 xblob33 l347 0=0 1=2 2=2
+PReLU                    l349                     1 1 l346 l349 0=64
+ConvolutionDepthWise     l350                     1 1 l349 l350 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l351                     1 1 l350 l351 0=128 1=1 5=1 6=8192
+Padding                  xblob34                  1 1 l347 xblob34 8=64
+BinaryOp                 l352                     2 1 xblob34 l351 l352
+PReLU                    l353                     1 1 l352 l353 0=128
+Split                    splitncnn_15             1 2 l353 xblob35 xblob36
+Convolution              l354                     1 1 xblob35 l354 0=64 1=1 5=1 6=8192
+PReLU                    l355                     1 1 l354 l355 0=64
+ConvolutionDepthWise     l356                     1 1 l355 l356 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l357                     1 1 l356 l357 0=128 1=1 5=1 6=8192
+BinaryOp                 l358                     2 1 xblob36 l357 l358
+PReLU                    l359                     1 1 l358 l359 0=128
+Split                    splitncnn_16             1 2 l359 xblob37 xblob38
+Convolution              l360                     1 1 xblob37 l360 0=64 1=1 5=1 6=8192
+PReLU                    l361                     1 1 l360 l361 0=64
+ConvolutionDepthWise     l362                     1 1 l361 l362 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l363                     1 1 l362 l363 0=128 1=1 5=1 6=8192
+BinaryOp                 l364                     2 1 xblob38 l363 l364
+PReLU                    l365                     1 1 l364 l365 0=128
+Split                    splitncnn_17             1 2 l365 xblob39 xblob40
+Convolution              l366                     1 1 xblob39 l366 0=64 1=1 5=1 6=8192
+PReLU                    l367                     1 1 l366 l367 0=64
+ConvolutionDepthWise     l368                     1 1 l367 l368 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l369                     1 1 l368 l369 0=128 1=1 5=1 6=8192
+BinaryOp                 l370                     2 1 xblob40 l369 l370
+PReLU                    l371                     1 1 l370 l371 0=128
+Split                    splitncnn_18             1 2 l371 xblob41 xblob42
+Convolution              l372                     1 1 xblob41 l372 0=64 1=1 5=1 6=8192
+PReLU                    l373                     1 1 l372 l373 0=64
+ConvolutionDepthWise     l374                     1 1 l373 l374 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l375                     1 1 l374 l375 0=128 1=1 5=1 6=8192
+BinaryOp                 l376                     2 1 xblob42 l375 l376
+PReLU                    l377                     1 1 l376 l377 0=128
+Split                    splitncnn_19             1 2 l377 xblob43 xblob44
+Convolution              l378                     1 1 xblob43 l378 0=64 1=2 3=2 5=1 6=32768
+Pooling                  l379                     1 1 xblob44 l379 0=0 1=2 2=2
+PReLU                    l380                     1 1 l378 l380 0=64
+ConvolutionDepthWise     l381                     1 1 l380 l381 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l382                     1 1 l381 l382 0=128 1=1 5=1 6=8192
+BinaryOp                 l383                     2 1 l379 l382 l383
+PReLU                    l384                     1 1 l383 l384 0=128
+Split                    splitncnn_20             1 2 l384 xblob45 xblob46
+Convolution              l385                     1 1 xblob45 l385 0=64 1=1 5=1 6=8192
+PReLU                    l386                     1 1 l385 l386 0=64
+ConvolutionDepthWise     l387                     1 1 l386 l387 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l388                     1 1 l387 l388 0=128 1=1 5=1 6=8192
+BinaryOp                 l389                     2 1 xblob46 l388 l389
+PReLU                    l390                     1 1 l389 l390 0=128
+Split                    splitncnn_21             1 2 l390 xblob47 xblob48
+Convolution              l391                     1 1 xblob47 l391 0=64 1=1 5=1 6=8192
+PReLU                    l392                     1 1 l391 l392 0=64
+ConvolutionDepthWise     l393                     1 1 l392 l393 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l394                     1 1 l393 l394 0=128 1=1 5=1 6=8192
+BinaryOp                 l395                     2 1 xblob48 l394 l395
+PReLU                    l396                     1 1 l395 l396 0=128
+Split                    splitncnn_22             1 2 l396 xblob49 xblob50
+Convolution              l397                     1 1 xblob49 l397 0=64 1=1 5=1 6=8192
+PReLU                    l398                     1 1 l397 l398 0=64
+ConvolutionDepthWise     l399                     1 1 l398 l399 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l400                     1 1 l399 l400 0=128 1=1 5=1 6=8192
+BinaryOp                 l401                     2 1 xblob50 l400 l401
+PReLU                    l402                     1 1 l401 l402 0=128
+Split                    splitncnn_23             1 2 l402 xblob51 xblob52
+Convolution              l403                     1 1 xblob51 l403 0=64 1=1 5=1 6=8192
+PReLU                    l404                     1 1 l403 l404 0=64
+ConvolutionDepthWise     l405                     1 1 l404 l405 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l406                     1 1 l405 l406 0=128 1=1 5=1 6=8192
+BinaryOp                 l407                     2 1 xblob52 l406 l407
+PReLU                    l408                     1 1 l407 l408 0=128
+Split                    splitncnn_24             1 2 l408 xblob53 xblob54
+Convolution              l409                     1 1 xblob53 l409 0=64 1=2 3=2 5=1 6=32768
+Pooling                  l410                     1 1 xblob54 l410 0=0 1=2 2=2
+PReLU                    l411                     1 1 l409 l411 0=64
+ConvolutionDepthWise     l412                     1 1 l411 l412 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l413                     1 1 l412 l413 0=128 1=1 5=1 6=8192
+BinaryOp                 l414                     2 1 l410 l413 l414
+PReLU                    l415                     1 1 l414 l415 0=128
+Split                    splitncnn_25             1 2 l415 xblob55 xblob56
+Convolution              l416                     1 1 xblob55 l416 0=64 1=1 5=1 6=8192
+PReLU                    l417                     1 1 l416 l417 0=64
+ConvolutionDepthWise     l418                     1 1 l417 l418 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l419                     1 1 l418 l419 0=128 1=1 5=1 6=8192
+BinaryOp                 l420                     2 1 xblob56 l419 l420
+PReLU                    l421                     1 1 l420 l421 0=128
+Split                    splitncnn_26             1 2 l421 xblob57 xblob58
+Convolution              l422                     1 1 xblob57 l422 0=64 1=1 5=1 6=8192
+PReLU                    l423                     1 1 l422 l423 0=64
+ConvolutionDepthWise     l424                     1 1 l423 l424 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l425                     1 1 l424 l425 0=128 1=1 5=1 6=8192
+BinaryOp                 l426                     2 1 xblob58 l425 l426
+PReLU                    l427                     1 1 l426 l427 0=128
+Split                    splitncnn_27             1 2 l427 xblob59 xblob60
+Convolution              l428                     1 1 xblob59 l428 0=64 1=1 5=1 6=8192
+PReLU                    l429                     1 1 l428 l429 0=64
+ConvolutionDepthWise     l430                     1 1 l429 l430 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l431                     1 1 l430 l431 0=128 1=1 5=1 6=8192
+BinaryOp                 l432                     2 1 xblob60 l431 l432
+PReLU                    l433                     1 1 l432 l433 0=128
+Split                    splitncnn_28             1 2 l433 xblob61 xblob62
+Convolution              l434                     1 1 xblob61 l434 0=64 1=1 5=1 6=8192
+PReLU                    l435                     1 1 l434 l435 0=64
+ConvolutionDepthWise     l436                     1 1 l435 l436 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l437                     1 1 l436 l437 0=128 1=1 5=1 6=8192
+BinaryOp                 l438                     2 1 xblob62 l437 l438
+PReLU                    l439                     1 1 l438 l439 0=128
+Split                    splitncnn_29             1 2 l439 xblob63 xblob64
+Convolution              l440                     1 1 xblob63 l440 0=64 1=2 3=2 5=1 6=32768
+Pooling                  l441                     1 1 xblob64 l441 0=0 1=2 2=2
+PReLU                    l442                     1 1 l440 l442 0=64
+ConvolutionDepthWise     l443                     1 1 l442 l443 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l444                     1 1 l443 l444 0=128 1=1 5=1 6=8192
+BinaryOp                 l445                     2 1 l441 l444 l445
+PReLU                    l446                     1 1 l445 l446 0=128
+Split                    splitncnn_30             1 2 l446 xblob65 xblob66
+Convolution              l447                     1 1 xblob65 l447 0=64 1=1 5=1 6=8192
+PReLU                    l448                     1 1 l447 l448 0=64
+ConvolutionDepthWise     l449                     1 1 l448 l449 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l450                     1 1 l449 l450 0=128 1=1 5=1 6=8192
+BinaryOp                 l451                     2 1 xblob66 l450 l451
+PReLU                    l452                     1 1 l451 l452 0=128
+Split                    splitncnn_31             1 2 l452 xblob67 xblob68
+Convolution              l453                     1 1 xblob67 l453 0=64 1=1 5=1 6=8192
+PReLU                    l454                     1 1 l453 l454 0=64
+ConvolutionDepthWise     l455                     1 1 l454 l455 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l456                     1 1 l455 l456 0=128 1=1 5=1 6=8192
+BinaryOp                 l457                     2 1 xblob68 l456 l457
+PReLU                    l458                     1 1 l457 l458 0=128
+Split                    splitncnn_32             1 2 l458 xblob69 xblob70
+Convolution              l459                     1 1 xblob69 l459 0=64 1=1 5=1 6=8192
+PReLU                    l460                     1 1 l459 l460 0=64
+ConvolutionDepthWise     l461                     1 1 l460 l461 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l462                     1 1 l461 l462 0=128 1=1 5=1 6=8192
+BinaryOp                 l463                     2 1 xblob70 l462 l463
+PReLU                    l464                     1 1 l463 l464 0=128
+Split                    splitncnn_33             1 2 l464 xblob71 xblob72
+Convolution              l465                     1 1 xblob71 l465 0=64 1=1 5=1 6=8192
+PReLU                    l466                     1 1 l465 l466 0=64
+ConvolutionDepthWise     l467                     1 1 l466 l467 0=64 1=3 4=1 5=1 6=576 7=64
+Convolution              l468                     1 1 l467 l468 0=128 1=1 5=1 6=8192
+BinaryOp                 l469                     2 1 xblob72 l468 l469
+PReLU                    l470                     1 1 l469 l470 0=128
+Split                    splitncnn_34             1 2 l470 xblob73 xblob74
+Convolution              l472                     1 1 xblob73 score 0=1 1=2 5=1 6=512
+Convolution              l473                     1 1 xblob74 landmarks 0=136 1=2 5=1 6=69632

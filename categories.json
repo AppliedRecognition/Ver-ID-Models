@@ -37,6 +37,13 @@
         "v1": [
             "shape_predictor_5_face_landmarks.dat",
             "shape_predictor_68_face_landmarks.dat"
+        ],
+        "facemesh-NCNN": [
+            "facemesh68.bin",
+            "facemesh68.param"
+        ],
+        "facemesh-DLIB": [
+            "facemesh68.nv"
         ]
     },
     "classifiers": {
